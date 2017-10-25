@@ -15,7 +15,25 @@ class ViewController: UIViewController {
 //        demo(x: nil, y: 10)
 //        demo1(x: nil, y: 10)
 //        demo2()
-        demo3()
+//        demo3()
+        demo4(name: "老王", age: 18)
+    }
+    
+    func demo4(name : String?,age : Int?){
+        if let name = name,let age = age {
+            //非空的name和age仅在{}内有效
+            print(name + String(age))
+        }else{
+            print("姓名或者年龄为空")
+        }
+        //使用同名的变量接受值,在后续使用的都是非空值,不需要解包
+        //好处:可以避免起名字的烦恼
+        guard let name = name,
+            let age = age else {
+                print("姓名或者年龄为空")
+                return
+        }
+        print(name + String(age))
     }
     
     //MARK: - guard 守护/守卫
