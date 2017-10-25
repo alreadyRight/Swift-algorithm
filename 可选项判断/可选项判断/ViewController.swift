@@ -13,9 +13,49 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        demo(x: nil, y: 10)
-        demo1(x: nil, y: 10)
+//        demo1(x: nil, y: 10)
+//        demo2()
+        demo3()
     }
     
+    //MARK: - guard 守护/守卫
+    //guard let 和 if let刚好相反
+    func demo3(){
+        let oName:String? = "老王"
+        let oAge:Int? = 10
+        //guard let 守护一定有值,如果没有就直接返回
+        guard let name = oName,let age = oAge else {
+            print("姓名或者年龄为空")
+            return
+        }
+        //代码执行至此,name和age一定有值
+        //通常判断是否有值之后,会做具体的逻辑实现,通常代码多
+        //如果用if let 凭空多了一层分支,guard 是降低分支层次的办法
+        //guard 的语法是Swift2.0推出的
+        print(name + String(age))
+        
+    }
+    
+    //MARK: - if let / var 连用语法,目的就是判断值是否为nil,{}内一定有值,可以直接使用,不需要解包
+    func demo2(){
+        let oName:String? = "老王"
+        let age:Int? = 10
+        if oName != nil && age != nil {
+            print(oName! + String(age!))
+        }
+        if var name = oName,let ass = age {
+            
+            name = "老李"
+            
+            //进入分支之后,name和ass一定有值,不需要解包
+            //name和ass的作用域仅在{}中
+            print(name + String(ass))
+        }else{
+            print("name 或者 age 为nil")
+        }
+        
+        
+    }
     
     //MARK: -??
     func demo1(x : Int? , y : Int?){
