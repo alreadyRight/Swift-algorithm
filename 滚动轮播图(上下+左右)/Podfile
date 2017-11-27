@@ -6,5 +6,6 @@ target '滚动轮播图(上下+左右)' do
   # use_frameworks!
 
   pod 'Masonry'
+  pod 'SDWebImage'
 
 end
