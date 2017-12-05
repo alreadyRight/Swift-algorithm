@@ -21,6 +21,9 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         fl.minimumLineSpacing = 0
         fl.minimumInteritemSpacing = 0
         fl.scrollDirection = .horizontal
+        //猜测,flowLayout不能设置collectionView的属性
+//        fl.collectionView?.isPagingEnabled = true
+//        fl.collectionView?.bounces = false
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: fl)
         collectionView.delegate = self
         collectionView.dataSource = self
