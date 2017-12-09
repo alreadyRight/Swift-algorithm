@@ -27,13 +27,13 @@ class Person: NSObject {
         //遍历数组
         for i in 0..<Int(count) {
             //根据下标获取属性
-            let pty = list?[i]
+            let pty = list?[i]//从可选的数组中提取下标对应的结果,结果可能为nil
             //获取'属性'的名称 C 语言字符串
-            let cName = property_getName(pty!)
-//            print(cName)
+            let cName = property_getName(pty!)//需要用属性获取名称,属性必须存在,用了强行解包
+            print(cName)
             //转换成String的字符串
             
-//            let name = String(uft8String:cName)
+//            let name = String(uft8String:cName!)
 //            print(name)
             
             //释放C语言的对象
