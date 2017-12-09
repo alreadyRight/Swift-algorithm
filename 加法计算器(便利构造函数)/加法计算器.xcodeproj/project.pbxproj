@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630F766B1FDBBDD000C69AF8 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F766A1FDBBDD000C69AF8 /* UITextField+Extension.swift */; };
+		630F766D1FDBBFDC00C69AF8 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F766C1FDBBFDC00C69AF8 /* UIButton+Extension.swift */; };
+		630F766F1FDBC4EA00C69AF8 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F766E1FDBC4EA00C69AF8 /* UILabel+Extension.swift */; };
 		632D6F3C1FDA65E900F6F9B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D6F3B1FDA65E900F6F9B7 /* AppDelegate.swift */; };
 		632D6F3E1FDA65E900F6F9B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D6F3D1FDA65E900F6F9B7 /* ViewController.swift */; };
 		632D6F411FDA65E900F6F9B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632D6F3F1FDA65E900F6F9B7 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		630F766A1FDBBDD000C69AF8 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		630F766C1FDBBFDC00C69AF8 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		630F766E1FDBC4EA00C69AF8 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		632D6F381FDA65E900F6F9B7 /* 加法计算器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "加法计算器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632D6F3B1FDA65E900F6F9B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632D6F3D1FDA65E900F6F9B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +62,9 @@
 			children = (
 				632D6F3B1FDA65E900F6F9B7 /* AppDelegate.swift */,
 				632D6F3D1FDA65E900F6F9B7 /* ViewController.swift */,
+				630F766A1FDBBDD000C69AF8 /* UITextField+Extension.swift */,
+				630F766C1FDBBFDC00C69AF8 /* UIButton+Extension.swift */,
+				630F766E1FDBC4EA00C69AF8 /* UILabel+Extension.swift */,
 				632D6F3F1FDA65E900F6F9B7 /* Main.storyboard */,
 				632D6F421FDA65E900F6F9B7 /* Assets.xcassets */,
 				632D6F441FDA65E900F6F9B7 /* LaunchScreen.storyboard */,
@@ -136,6 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630F766B1FDBBDD000C69AF8 /* UITextField+Extension.swift in Sources */,
+				630F766D1FDBBFDC00C69AF8 /* UIButton+Extension.swift in Sources */,
+				630F766F1FDBC4EA00C69AF8 /* UILabel+Extension.swift in Sources */,
 				632D6F3E1FDA65E900F6F9B7 /* ViewController.swift in Sources */,
 				632D6F3C1FDA65E900F6F9B7 /* AppDelegate.swift in Sources */,
 			);

@@ -23,40 +23,44 @@ class ViewController: UIViewController {
 
     func setupUI() -> () {
         //1.两个textField
-        let textField1 = UITextField(frame: CGRect(x: 20, y: 20, width: 100, height: 30))
-        textField1.borderStyle = .roundedRect
-        textField1.text = "0"
+//        let textField1 = UITextField(frame: CGRect(x: 20, y: 20, width: 100, height: 30))
+//        textField1.borderStyle = .roundedRect
+//        textField1.text = "0"
+//        view.addSubview(textField1)
+        let textField1 = UITextField(placeholder: "0",
+                                     frame: CGRect(x: 20, y: 20, width: 100, height: 30))
         view.addSubview(textField1)
         numText1 = textField1
         
-        let textField2 = UITextField(frame: CGRect(x: 140, y: 20, width: 100, height: 30))
-        textField2.borderStyle = .roundedRect
-        textField2.text = "0"
+//        let textField2 = UITextField(frame: CGRect(x: 140, y: 20, width: 100, height: 30))
+//        textField2.borderStyle = .roundedRect
+//        textField2.text = "0"
+        let textField2 = UITextField(placeholder: "0",
+                                     frame: CGRect(x: 140, y: 20, width: 100, height: 30))
+        
         view.addSubview(textField2)
         numText2 = textField2
         
         //2.三个label
-        let label1 = UILabel(frame: CGRect(x: 120, y: 20, width: 20, height: 30))
-        label1.text = "+"
-        label1.textAlignment = .center
+//        let label1 = UILabel(frame: CGRect(x: 120, y: 20, width: 20, height: 30))
+//        label1.text = "+"
+//        label1.textAlignment = .center
+        let label1 = UILabel(frame: CGRect(x: 120, y: 20, width: 20, height: 30),
+                             text: "+")
         view.addSubview(label1)
         
-        let label2 = UILabel(frame: CGRect(x: 240, y: 20, width: 20, height: 30))
-        label2.text = "="
-        label2.textAlignment = .center
+        let label2 = UILabel(frame: CGRect(x: 240, y: 20, width: 20, height: 30),
+                             text: "=")
         view.addSubview(label2)
         
-        let label3 = UILabel(frame: CGRect(x: 240, y: 20, width: 60, height: 30))
-        label3.text = "0"
-        label3.textAlignment = .right
+        let label3 = UILabel(frame: CGRect(x: 260, y: 20, width: 60, height: 30),
+                             text: "0")
         view.addSubview(label3)
+        
         label = label3
         
         //3.一个button
-        let button = UIButton()
-        button .setTitle("计算", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
-        button.sizeToFit()
+        let button = UIButton(title: "计算")
         button.center = view.center
         view.addSubview(button)
         button.addTarget(self, action: #selector(clac), for: .touchUpInside)
