@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630F76291FDB787400C69AF8 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F76281FDB787400C69AF8 /* Student.swift */; };
 		632D6F9E1FDA80FF00F6F9B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D6F9D1FDA80FF00F6F9B7 /* AppDelegate.swift */; };
 		632D6FA01FDA80FF00F6F9B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D6F9F1FDA80FF00F6F9B7 /* ViewController.swift */; };
 		632D6FA31FDA80FF00F6F9B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632D6FA11FDA80FF00F6F9B7 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		630F76281FDB787400C69AF8 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		632D6F9A1FDA80FF00F6F9B7 /* 构造函数(KVC).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "构造函数(KVC).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632D6F9D1FDA80FF00F6F9B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632D6F9F1FDA80FF00F6F9B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				632D6F9D1FDA80FF00F6F9B7 /* AppDelegate.swift */,
 				632D6F9F1FDA80FF00F6F9B7 /* ViewController.swift */,
 				632D6FAF1FDA811200F6F9B7 /* Person.swift */,
+				630F76281FDB787400C69AF8 /* Student.swift */,
 				632D6FA11FDA80FF00F6F9B7 /* Main.storyboard */,
 				632D6FA41FDA80FF00F6F9B7 /* Assets.xcassets */,
 				632D6FA61FDA80FF00F6F9B7 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 				632D6FB01FDA811200F6F9B7 /* Person.swift in Sources */,
 				632D6FA01FDA80FF00F6F9B7 /* ViewController.swift in Sources */,
 				632D6F9E1FDA80FF00F6F9B7 /* AppDelegate.swift in Sources */,
+				630F76291FDB787400C69AF8 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

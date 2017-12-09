@@ -28,8 +28,8 @@ class Person: NSObject {
     var age : Int = 0
     //如果是private属性,使用KVC设置值得时候,同样无法设置
     //如果设置成private属性/方法,禁止外部访问
-    private var title : String?
-    
+//    private var title : String?
+    var title : String?
     
     init(dict:[String:AnyObject]){
         //保证对象已经完全初始化完成!
@@ -41,6 +41,7 @@ class Person: NSObject {
     }
     //当KVC赋值失败时,走的方法
     override func setValue(_ value: Any?, forUndefinedKey key: String) {
+        //没有调用super,将父类的代码完全覆盖,不会崩溃,打印错误的key/value
         print(value as Any,key)
     }
 }

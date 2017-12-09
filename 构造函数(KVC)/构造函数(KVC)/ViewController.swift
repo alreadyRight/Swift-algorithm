@@ -12,10 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let p = Person(dict: ["name":"老张","age":109,"title":"BOSS"] as[String:AnyObject])
-        print(p.name ?? "hehe")
-        print(p.age)
+//        let p = Person(dict: ["name":"老张","age":109,"title":"BOSS"] as[String:AnyObject])
+//        print(p.name ?? "hehe")
+//        print(p.age)
 //        print(p.title ?? "")
+        let s = Student(dict: ["name":"老张","age":109,"title":"BOSS","number":"001","xxx":"abc"] as [String:AnyObject])
+        print(s.name ?? "")
+        print(s.age)
+        print(s.title ?? "")
+        print(s.number ?? "")
     }
 
 
