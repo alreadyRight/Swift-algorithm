@@ -77,6 +77,21 @@ class ViewController: UIViewController {
         }
         label?.text = "\(num1 + num2)"
     }
+    //没有func -> 不让调用
+    //没有() -> 不让重载
+    //在对象呗销毁前自动调用
+    //类似OC的dealloc
+    deinit{
+        //1.跟踪对象的销毁
+        //2.必须释放的
+        /**
+            1.通知,不释放不会崩溃,但会泄露
+            2.KVO,不释放会崩溃
+            3.NSTimer / CADisplayLink
+         */
+    }
     
 }
+
+
 

@@ -1,0 +1,6 @@
+[submodule "私人通讯录/Snappy"]
+	path = 私人通讯录/Snappy
+	url = https://github.com/Masonry/Snappy.git
+[submodule "AddressBook/Snappy"]
+	path = AddressBook/Snappy
+	url = https://github.com/Masonry/Snappy.git
