@@ -15,7 +15,7 @@
 		631D844A1FDE20EC0009DFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631D84481FDE20EC0009DFDA /* LaunchScreen.storyboard */; };
 		631D84521FDE21450009DFDA /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631D84511FDE21450009DFDA /* DetailTableViewCell.swift */; };
 		631D84541FDE215D0009DFDA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631D84531FDE215D0009DFDA /* DetailViewController.swift */; };
-		63FFAA391FDE2EEA003DCBE8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FFAA3A1FDE2EEA003DCBE8 /* SnapKit.framework */; };
+		63FFAA391FDE2EEA003DCBE8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FFAA3A1FDE2EEA003DCBE8 /* SnapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */

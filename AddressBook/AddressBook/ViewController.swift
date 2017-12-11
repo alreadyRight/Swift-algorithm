@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    
+    private var arr:Array<[String:String]> = []
     private var selfTableView = UITableView()
-    
+    override func viewWillAppear(_ animated: Bool) {
+        setNormalValues()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(clickAdd))
@@ -22,13 +24,22 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         view.addSubview(tableView)
         selfTableView = tableView
     }
+    
+    func setNormalValues() -> Void {
+        let ud = UserDefaults.standard
+        guard let tArr: Array<[String : String]> = ud.object(forKey: "addressBook") as? Array<[String:String]> else {
+            return
+        }
+        arr = tArr
+        selfTableView.reloadData()
+    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return arr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,14 +47,18 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         if cell == nil {
             cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cellID")
         }
-        cell?.textLabel?.text = "测试\(indexPath.row)"
-        cell?.detailTextLabel?.text = "详情测试\(indexPath.row)"
+        cell?.selectionStyle = .none
+        cell?.textLabel?.text = arr[indexPath.row]["name"]
+        cell?.detailTextLabel?.text = arr[indexPath.row]["phone"]
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = DetailViewController()
         detailVC.status = 1
+        detailVC.name = arr[indexPath.row]["name"]
+        detailVC.phone = arr[indexPath.row]["phone"]
+        detailVC.address = arr[indexPath.row]["address"]
         navigationController?.pushViewController(detailVC, animated: true)
     }
 
