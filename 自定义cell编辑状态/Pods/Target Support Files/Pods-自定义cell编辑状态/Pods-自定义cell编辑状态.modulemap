@@ -1,0 +1,6 @@
+framework module Pods____cell____ {
+  umbrella header "Pods-自定义cell编辑状态-umbrella.h"
+
+  export *
+  module * { export * }
+}

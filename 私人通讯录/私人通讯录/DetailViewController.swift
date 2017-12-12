@@ -84,8 +84,15 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
             arr = Array<[String:String]>()
         }
         for i in 0 ..< arr.count {
-            if dict == arr[i] {
+            if dict["name"] == arr[i]["name"] {
                 arr.remove(at: i)
+                break
+            }else if dict["phone"] == arr[i]["phone"]{
+                arr.remove(at: i)
+                break
+            }else if dict["address"] == arr[i]["address"]{
+                arr.remove(at: i)
+                break
             }
         }
         arr.append(dict)
