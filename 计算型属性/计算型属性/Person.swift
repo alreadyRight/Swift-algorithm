@@ -22,4 +22,17 @@ class Person: NSObject {
         }
     }
     
+    var title: String?{
+        //只
+        get{
+            return "Mr." + (name ?? "")
+        }
+    }
+    
+    var title2: String {
+        return "Mr XXX." + (name ?? "")
+    }
+    
+    
+    
 }

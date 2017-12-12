@@ -15,7 +15,12 @@ class ViewController: UIViewController {
         let p = Person()
         p.name = "老王"
         print(p.name ?? "")
-        
+        print(p.title ?? "")
+        //'title' is a get-only property
+        //只读属性,不写set方法
+//        p.title = "老张"
+        print(p.title2)
+//        p.title2 = "laoksj"
     }
 
 }
