@@ -51,17 +51,24 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
         let cell: DetailTableViewCell = tableView.dequeueReusableCell(withIdentifier: detailCellID, for: indexPath) as! DetailTableViewCell
         switch indexPath.row {
         case 0:
-            cell.setNormalValue(titleText: "姓名", placeholder: "请填写姓名", dataText: name ?? "")
+//            cell.setNormalValue(titleText: "姓名", placeholder: "请填写姓名", dataText: name ?? "")
+            cell.title = "姓名"
+            cell.placeholder = "请填写姓名"
+            cell.dataText = name ?? ""
             cell.changeText { [weak self](text) in
                 self?.name = text
             }
         case 1:
-            cell.setNormalValue(titleText: "电话号码", placeholder: "请填写电话号码", dataText: phone ?? "")
+            cell.title = "电话号码"
+            cell.placeholder = "请填写电话号码"
+            cell.dataText = phone ?? ""
             cell.changeText { [weak self](text) in
                 self?.phone = text
             }
         default:
-            cell.setNormalValue(titleText: "住址", placeholder: "请填住址", dataText: address ?? "")
+            cell.title = "地址"
+            cell.placeholder = "请填写地址"
+            cell.dataText = address ?? ""
             cell.changeText { [weak self](text) in
                 self?.address = text
             }

@@ -14,6 +14,9 @@ class DetailTableViewCell: UITableViewCell,UITextFieldDelegate {
     
     var CellBlock :ttt?
     
+    
+    
+    
     func changeText(completion:@escaping (_ text: String)->()) -> Void {
        CellBlock = completion
     }
@@ -49,10 +52,28 @@ class DetailTableViewCell: UITableViewCell,UITextFieldDelegate {
         dataTextField = textField
     }
     
-    func setNormalValue(titleText: String,placeholder: String, dataText: String) -> Void {
-        titLabel.text = titleText
-        dataTextField.placeholder = placeholder
-        dataTextField.text = dataText
+//    func setNormalValue(titleText: String,placeholder: String, dataText: String) -> Void {
+//        titLabel.text = titleText
+//        dataTextField.placeholder = placeholder
+//        dataTextField.text = dataText
+//    }
+    
+    var title: String? {
+        didSet{
+            titLabel.text = title
+        }
+    }
+    
+    var placeholder: String? {
+        didSet{
+            dataTextField.placeholder = placeholder
+        }
+    }
+    
+    var dataText: String? {
+        didSet{
+            dataTextField.text = dataText
+        }
     }
     
     
