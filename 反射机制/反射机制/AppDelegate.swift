@@ -18,8 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //1.实例化window
         window = UIWindow()
         window?.backgroundColor = UIColor.white
-        //2.设置根控制器
-        let vc = ViewController()
+        //2.设置根控制器,需要添加命名空间 -> 默认就是'项目名称'(最好不要有数字和特殊字符)
+        let clsName = "反射机制.ViewController"
+        //AnyClass?->视图控制器的类型
+        let cls = NSClassFromString(clsName) as? UIViewController.Type
+        //使用类创建视图控制器
+        let vc = cls?.init()
+        
+        
+//        let vc = ViewController()
         window?.rootViewController = vc
         //3.让window课件
         window?.makeKeyAndVisible()
